@@ -77,12 +77,3 @@
     (insert "(persist-scope)")
     (cider-eval-defun-at-point)
     (delete-region beg (point))))
-
-;; (defun on-file-save ()
-;;   (when (string-suffix-p ".js" (buffer-name))
-;;     (let* ((default-directory (projectile-project-root))
-;;            (output-buffer (get-buffer-create "*BB TCR Output*")))
-;;       (async-shell-command "bb tcr" output-buffer output-buffer)
-;;       (normal-mode))))
-
-;; (add-hook 'after-save-hook 'on-file-save)
