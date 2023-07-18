@@ -1,8 +1,10 @@
 (setq user-full-name "Dmitry Egoov")
 
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-solarized-light)
 
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+
+(setq projectile-create-missing-test-files 'true)
 
 (setq display-line-numbers-type 'relative)
 
