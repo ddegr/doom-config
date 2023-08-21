@@ -23,15 +23,14 @@
 (defun convert-to-json () (interactive) (try-convert "json"))
 (defun convert-to-yaml () (interactive) (try-convert "yaml"))
 
+(setq cljr-magic-require-namespaces nil)
+
 (map! (:leader
        (:map (clojure-mode-map clojurescript-mode-map emacs-lisp-mode-map)
              (:prefix ("o")
                       "e" #'convert-to-edn
                       "j" #'convert-to-json
-                      "y" #'convert-to-yaml))))
-
-(map! (:leader
-       (:map (clojure-mode-map clojurescript-mode-map emacs-lisp-mode-map)
+                      "y" #'convert-to-yaml)
         (:prefix ("k" . "lisp")
          "j" #'paredit-join-sexps
          "c" #'paredit-split-sexp
