@@ -8,7 +8,7 @@
 
 (setq display-line-numbers-type 'relative)
 
-(setq doom-font (font-spec :family "Iosevka" :size 13))
+(setq doom-font (font-spec :family "Iosevka" :size 14))
 
 (after! cider
   (setq cider-repl-pop-to-buffer-on-connect nil))
