@@ -23,6 +23,8 @@
 (defun convert-to-json () (interactive) (try-convert "json"))
 (defun convert-to-yaml () (interactive) (try-convert "yaml"))
 
+(map! (:leader (:prefix ("o") "P" #'treemacs-select-window)))
+
 (setq cljr-magic-require-namespaces nil)
 
 (map! (:leader
